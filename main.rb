@@ -32,6 +32,25 @@ enable :sessions
 # 			Redirects
 
 get '/' do
+  @login = User.all
+
 
   erb :home
 end
+
+
+
+post '/login' do
+	params[:fname]
+	params[:lname]
+	params[:username]
+	params[:email]
+	params[:password]
+end
+
+
+
+
+
+
+
